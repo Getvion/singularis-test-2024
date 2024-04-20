@@ -3,11 +3,12 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "allowJs": false,
     "module": "ESNext",
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -18,7 +19,26 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Linting */
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@common": ["./common"],
+      "@common/*": ["./common/*"],
+      "@pages": ["./pages"],
+      "@features/*": ["./features/*"],
+      "@assets/*": ["./assets/*"],
+      "@utils/api": ["./utils/api"],
+      "@utils/firebase": ["./utils/firebase"],
+      "@utils/constants": ["./utils/constants"],
+      "@utils/helpers": ["./utils/helpers"],
+      "@utils/contexts": ["./utils/contexts"],
+      "@utils/hooks": ["./utils/hooks"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
