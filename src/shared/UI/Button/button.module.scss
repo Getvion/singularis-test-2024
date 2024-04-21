@@ -1,0 +1,17 @@
+.button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: rgb(116, 116, 222);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button.disabled {
+  cursor: not-allowed;
+}
