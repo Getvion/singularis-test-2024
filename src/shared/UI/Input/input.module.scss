@@ -1,5 +1,21 @@
 .input {
   padding: 5px;
+}
+
+.input.number {
+  -moz-appearance: textfield;
+  max-width: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input.number::-webkit-outer-spin-button,
+.input.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input.email {
   min-width: 200px;
   max-width: 300px;
 }
