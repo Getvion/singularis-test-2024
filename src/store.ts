@@ -1,10 +1,11 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
-import { digitalCodeReducer } from './features';
+import { countdownTimer, digitalCode } from './features';
 
 export const store = configureStore({
   reducer: {
-    digitalCodeReducer
+    digitalCode,
+    countdownTimer
   }
 });
 
