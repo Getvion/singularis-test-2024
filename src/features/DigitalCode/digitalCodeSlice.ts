@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { IStore } from '../../@types/store';
+
 const initialState = {
   digitalCode: '',
   isCodeCorrect: false
@@ -27,7 +29,5 @@ export const digitalCodeReducer = digitalCodeSlice.reducer;
 export const { setInputsData } = digitalCodeSlice.actions;
 
 // selectors
-export const selectInputValues = (state: { digitalCode: string; isCodeCorrect: boolean }) =>
-  state.digitalCode;
-export const selectIsCodeCorrect = (state: { digitalCode: string; isCodeCorrect: boolean }) =>
-  state.isCodeCorrect;
+export const selectInputValues = (state: IStore) => state.digitalCode.digitalCode;
+export const selectIsCodeCorrect = (state: IStore) => state.digitalCode.isCodeCorrect;

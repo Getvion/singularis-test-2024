@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { IStore } from '../../@types/store';
+
 const initialState = {
   timeToWork: '10:00',
   leftTime: ''
@@ -22,6 +24,5 @@ export const countdownTimerReducer = countdownTimerSlice.reducer;
 export const { setLeftTime, setTimeToWork } = countdownTimerSlice.actions;
 
 // selectors
-export const selectLeftTime = (state: { leftTime: string; timeToWork: string }) => state.leftTime;
-export const selectTimeToWork = (state: { leftTime: string; timeToWork: string }) =>
-  state.timeToWork;
+export const selectLeftTime = (state: IStore) => state.countdownTimer.leftTime;
+export const selectTimeToWork = (state: IStore) => state.countdownTimer.timeToWork;
