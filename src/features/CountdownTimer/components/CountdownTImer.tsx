@@ -1,7 +1,7 @@
 import Countdown from 'react-countdown';
 import { useDispatch } from 'react-redux';
+import { Button } from 'shared';
 
-import { Button } from '../../../shared';
 import { setTimerEnd } from '../countdownTImerSlice';
 
 import styles from './countdownTImer.module.scss';

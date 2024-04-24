@@ -1,7 +1,6 @@
 import { useState } from 'react';
-
-import { InputTypeFields } from '../../../@types/Enums';
-import { Input } from '../../../shared';
+import { Input } from 'shared';
+import { InputTypeFields } from 'types/Enums';
 
 import styles from './digitalCode.module.scss';
 

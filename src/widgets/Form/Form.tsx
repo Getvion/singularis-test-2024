@@ -1,15 +1,10 @@
+import { CountdownTimer, selectCorrectCode, selectTimerEnd } from 'features';
+import { setDigitalCode, setIsCodeCorrect } from 'features/DigitalCode/digitalCodeSlice';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-
-import { InputTypeFields } from '../../@types/Enums';
-import { CountdownTimer, selectTimerEnd } from '../../features';
-import {
-  selectCorrectCode,
-  setDigitalCode,
-  setIsCodeCorrect
-} from '../../features/DigitalCode/digitalCodeSlice';
-import { Button, Checkbox, Input, Title } from '../../shared';
+import { Button, Checkbox, Input, Title } from 'shared';
+import { InputTypeFields } from 'types/Enums';
 
 import { FormStateEnum } from './FormTypes';
 

@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import { forwardRef } from 'react';
-
-import { InputTypeFields } from '../../../@types/Enums';
+import { InputTypeFields } from 'types/Enums';
 
 import styles from './input.module.scss';
 

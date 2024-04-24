@@ -1,7 +1,6 @@
 import { useState } from 'react';
-
-import { Title } from './shared';
-import { Form } from './widgets';
+import { Title } from 'shared';
+import { Form } from 'widgets';
 
 export const App = () => {
   const [timeTargetDate, setTimeTargetDate] = useState<number>(0);

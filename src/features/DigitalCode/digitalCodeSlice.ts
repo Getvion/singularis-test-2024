@@ -1,6 +1,6 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { IStore } from 'types/store';
 
-import { IStore } from '../../@types/store';
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   digitalCode: 0,

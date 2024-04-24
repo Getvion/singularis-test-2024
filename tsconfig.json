@@ -23,8 +23,15 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./src",
-    "paths": {}
+    "paths": {
+      "types/*": ["./types/*"],
+
+      "features/*": ["./features/*"],
+      "components/*": ["./components/*"],
+      "shared/*": ["./shared"],
+      "widgets/*": ["./widgets/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "src/types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
