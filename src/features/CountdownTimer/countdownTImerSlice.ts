@@ -20,6 +20,4 @@ export const countdownTimerReducer = countdownTimerSlice.reducer;
 export const { setTimerEnd } = countdownTimerSlice.actions;
 
 // selectors
-export const selectLeftTime = (state: IStore) => state.countdownTimer.leftTime;
-export const selectTimeToWork = (state: IStore) => state.countdownTimer.timeToWork;
 export const selectTimerEnd = (state: IStore) => state.countdownTimer.isTimerEnd;
