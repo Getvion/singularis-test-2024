@@ -3,26 +3,23 @@ import { createSlice } from '@reduxjs/toolkit';
 import { IStore } from '../../@types/store';
 
 const initialState = {
-  timeToWork: '10:00',
-  leftTime: ''
+  isTimerEnd: false
 };
 
 const countdownTimerSlice = createSlice({
   name: 'listsCatalog',
   initialState,
   reducers: {
-    setLeftTime: (state, { payload }) => {
-      state.leftTime = payload;
-    },
-    setTimeToWork: (state, { payload }) => {
-      state.timeToWork = payload;
+    setTimerEnd: (state, { payload }) => {
+      state.isTimerEnd = payload;
     }
   }
 });
 
 export const countdownTimerReducer = countdownTimerSlice.reducer;
-export const { setLeftTime, setTimeToWork } = countdownTimerSlice.actions;
+export const { setTimerEnd } = countdownTimerSlice.actions;
 
 // selectors
 export const selectLeftTime = (state: IStore) => state.countdownTimer.leftTime;
 export const selectTimeToWork = (state: IStore) => state.countdownTimer.timeToWork;
+export const selectTimerEnd = (state: IStore) => state.countdownTimer.isTimerEnd;
