@@ -4,11 +4,11 @@ export interface IStore {
 }
 
 export interface IDigitalCode {
-  digitalCode: string;
+  digitalCode: number;
   isCodeCorrect: boolean;
+  correctCode: number;
 }
 
 export interface ICountdownTimer {
-  timeToWork: string;
-  leftTime: string;
+  isTimerEnd: boolean;
 }
