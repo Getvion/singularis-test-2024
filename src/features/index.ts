@@ -6,6 +6,10 @@ export { DigitalCode } from './DigitalCode/components/DigitalCode';
 export { countdownTimerReducer as countdownTimer } from './CountdownTimer/countdownTImerSlice';
 export { digitalCodeReducer as digitalCode } from './DigitalCode/digitalCodeSlice';
 
-// actions
-export { selectLeftTime, selectTimeToWork } from './CountdownTimer/countdownTImerSlice';
-export { selectInputValues, selectIsCodeCorrect } from './DigitalCode/digitalCodeSlice';
+// selectors
+export { selectTimerEnd } from './CountdownTimer/countdownTImerSlice';
+export {
+  selectCorrectCode,
+  selectInputValues,
+  selectIsCodeCorrect
+} from './DigitalCode/digitalCodeSlice';
